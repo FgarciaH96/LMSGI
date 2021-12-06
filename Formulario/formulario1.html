@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pedidos e información</title>
+  <link rel="icon" type="image/jpg" href="Imagenes\buzon.jpg" sizes="16x16">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h2 id="arriba"> </h2>
+  <h1>Formulario de solicitud de información</h1>
+
+  <form action="/pagina_info.php" target="_blank" method="post" name="Nombre">
+    <header>
+      <fieldset>
+        <legend>Datos de contacto:</legend>
+        <label for="nombre">Nombre:</label><br>
+        <input type="texto" id="nombre" name="nombre" required><br>
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="texto" id="apellidos" name="apellidos" required><br>
+        <label for="email">Correo eletrónico:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="telefono" id="telefono" name="telefono" maxlength="12"><br>
+      </fieldset>
+    </header><br>
+    <section>
+      <p><strong>Nivel educativo</strong></p>
+      <label for="nivelfp">Selecciona tu FP:</label>
+      <select name="nivelfp" id="nivelfp">
+        <optgroup label="FP Básica">
+          <option value="volvo">Informática y comunicaciones</option>
+          <option value="saab">Informática de oficina</option>
+        </optgroup>
+        <optgroup label="Grado medio">
+          <option value="mercedes">Sistemas informáticos y redes</option>
+        </optgroup>
+        <optgroup label="Grado superior">
+          <option value="mercedes">Administración de sistemas informáticos en red</option>
+          <option value="audi">Desarrollo de aplicaciones multiplataforma</option>
+          <option value="audi">Desarrollo de aplicaciones web</option>
+        </optgroup>
+      </select>
+    </section>
+    <br>
+    <section>
+      <p>Elige los módulos de tu interés</p>
+      <fieldset>
+        <legend><strong>Grado Superior. ASIR</strong></legend>
+        <input type="checkbox" id="mod01" name="mod01" value="FHW">
+        <label for="mod01"> Fundamentos de hardware</label><br>
+        <input type="checkbox" id="mod02" name="mod02" value="FOL">
+        <label for="mod02">Formación y orientación laboral</label><br>
+        <input type="checkbox" id="mod03" name="mod03" value="ING01">
+        <label for="mod03"> Inglés 1</label><br>
+        <input type="checkbox" id="mod04" name="mod04" value="SGBD">
+        <label for="mod04"> Gestión de bases de datos</label><br>
+        <input type="checkbox" id="mod05" name="mod05" value="LMSGI">
+        <label for="mod05">Lenguajes de marcas</label><br>
+        <input type="checkbox" id="mod06" name="mod06" value="ISO">
+        <label for="mod06"> Implantación de sistemas operativos</label>
+      </fieldset>
+    </section><br>
+
+    <section>
+      <h2>¿Cómo contactamos?</h2>
+      <input type="radio" id="html" name="comunicacion" value="telefono">
+      <label for="telefono">Teléfono</label><br>
+      <input type="radio" id="email" name="comunicacion" value="email">
+      <label for="email">Correo electrónico</label><br>
+    </section>
+
+
+
+    <section>
+      <p><strong>Indícanos tus comentarios</strong></p>
+      <textarea name="comentarios" rows="10" cols="40" maxlength="250" placeholder="Máximo 250 caracteres" 5></textarea>
+    </section>
+    <br>
+    <a href="#arriba"><em>Subir</em></a><br><br>
+    <hr>
+    <footer>
+      <input type="reset" value="Reset"> <input type="submit" value="Enviar">
+    </footer>
+
+
+
+  </form>
+  </br></br>
+  
+
+  <hr />
+  García_Hermoso_Fernando_LMSGI_Tarea02 Formularios</br>
+  2021-2022
+</body>
+
+
+
+</html>

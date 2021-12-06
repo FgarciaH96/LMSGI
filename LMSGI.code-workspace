@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Ud01_xml Introd"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+		{
+			"name": "Launch Chrome",
+			"request": "launch",
+			"type": "pwa-chrome",
+			"url": "http://localhost:8080",
+			"webRoot": "${workspaceFolder}"
+		},
+			{
+				"type": "pwa-chrome",
+				"request": "launch",
+				"name": "Open index.html",
+				"file": "c:\\Users\\fgher\\OneDrive\\ASIR\\ASIR 21_22\\LMS\\Ud02html\\Tarea02\\index.html"
+			}
+		]
+	}
+}
